@@ -1,0 +1,42 @@
+.gameControls {
+  display: flex;
+  justify-content: space-between; /* Adjusts the alignment of items on the horizontal line */
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px; /* New property */
+  margin-right: 10px; /* New property */
+  width: calc(100% - 20px); /* New property */
+}
+
+.iconButton {
+  flex-grow: 1; /* New property */
+  width: 30%; /* New property */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the content of the button */
+  gap: 10px;
+  background-color: #555;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  color: white;
+}
+
+
+@media screen and (min-width: 600px) {
+  .gameControls {
+    display: none;
+  }
+}
+
+
+.iconButton[disabled] {
+  cursor: not-allowed;
+}
+
+.iconButton:hover {
+  background-color: #a1a1a1;
+}
