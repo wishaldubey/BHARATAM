@@ -228,9 +228,7 @@ export default function Home({ locale }) {
       multiplayerState.shouldConnect &&
       !multiplayerState.error
     ) {
-      const wsPath = `${
-        window.location.protocol === "https:" ? "wss" : "ws"
-      }://${window.location.host}/multiplayer`;
+     const wsPath = process.env.NEXT_PUBLIC_WEBSOCKET_PATH;
       setMultiplayerState((prev) => ({
         ...prev,
         connecting: true,
