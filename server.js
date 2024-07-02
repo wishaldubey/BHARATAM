@@ -1,14 +1,3 @@
-/*
-                    _     _
-__      _____  _ __| | __| | __ _ _   _  ___  ___ ___ _ __
-\ \ /\ / / _ \| '__| |/ _` |/ _` | | | |/ _ \/ __/ __| '__|
- \ V  V / (_) | |  | | (_| | (_| | |_| |  __/\__ \__ \ |
-  \_/\_/ \___/|_|  |_|\__,_|\__, |\__,_|\___||___/___/_|
-                            |___/
-A game by VISHAL
-
-https://github.com/coderVISHAL/BHARATAM
-*/
 
 import { createServer } from "http";
 import { parse } from "url";
