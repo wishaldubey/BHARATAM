@@ -51,10 +51,10 @@ const MapComponent = ({ ws, session, pinPoint, setPinPoint, answerShown, locatio
       target: mapRef.current,
       layers: [
         new TileLayer({
-          source: new XYZ({
-            url: 'https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', // Dark Matter map URL
-          }),
-        }),
+  source: new XYZ({
+    url: 'https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
+  }),
+}),
         new VectorLayer({ source: vectorSource.current }),
       ],
       view: new View({
