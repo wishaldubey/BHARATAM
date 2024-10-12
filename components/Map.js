@@ -52,7 +52,7 @@ const MapComponent = ({ ws, session, pinPoint, setPinPoint, answerShown, locatio
       layers: [
         new TileLayer({
   source: new XYZ({
-    url: 'https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
+    url: 'https://{a-c}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png',
   }),
 }),
         new VectorLayer({ source: vectorSource.current }),
